@@ -1,7 +1,7 @@
 /* Download Section Styles */
 .download {
-  background-color: #f3f3f3; /* Fondo marrón oscuro */
-  color:  #333;;
+  background-color: #f3f3f3;
+  color: #333;
   padding: 100px 0;
   text-align: center;
   font-family: 'Nunito', sans-serif;
@@ -17,15 +17,16 @@
   font-size: 1.2rem;
   max-width: 700px;
   margin: 0 auto 40px;
-  color: #555; /* Texto en gris claro */
+  color: #555;
   line-height: 1.6;
 }
 
 .download-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
-  flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+  flex-wrap: wrap; /* Para que los botones se ajusten en pantallas pequeñas */
 }
 
 .download-buttons .primary-button,
@@ -65,16 +66,45 @@
   font-size: 1.5rem;
 }
 
+/* Responsividad para pantallas medianas y pequeñas */
 @media (max-width: 768px) {
+  .download h2 {
+    font-size: 2rem; /* Reduce el tamaño del título en pantallas medianas */
+  }
+
+  .download p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
   .download-buttons {
-      flex-direction: column;
-      gap: 15px;
+    flex-direction: column; /* Los botones se apilan verticalmente */
+    gap: 15px;
+    align-items: center; /* Asegura que los botones estén centrados */
   }
 
   .download-buttons .primary-button,
   .download-buttons .secondary-button {
-      width: 100%;
-      max-width: 300px; /* Ajuste en pantallas pequeñas */
-      justify-content: center;
+    width: 100%; /* Los botones ocupan todo el ancho disponible */
+    max-width: 300px; /* Limita el ancho máximo de los botones */
+    justify-content: center;
+    padding: 12px 30px; /* Ajusta el relleno para pantallas medianas */
+  }
+}
+
+/* Responsividad para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  .download h2 {
+    font-size: 1.8rem; /* Reduce aún más el tamaño del título en móviles */
+  }
+
+  .download p {
+    font-size: 0.9rem;
+  }
+
+  .download-buttons .primary-button,
+  .download-buttons .secondary-button {
+    padding: 10px 25px; /* Ajusta el relleno de los botones para móviles */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente en móviles */
   }
 }
