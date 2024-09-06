@@ -28,28 +28,49 @@
   flex-wrap: wrap; /* Para que los botones se ajusten en pantallas pequeñas */
 }
 
-.download-buttons .primary-button,
-.download-buttons .secondary-button {
-  background-color: #ffffff; /* Ambos botones blancos por defecto */
+/* Botón App Store (Gris claro) */
+.download-buttons .primary-button {
+  background-color: #f3f3f3; /* Gris claro */
   color: #333;
   padding: 15px 40px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
-  border: 2px solid #c4c74a; /* Añadir un borde amarillo tenue */
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  border: 2px solid #d1d1d1; /* Borde gris */
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efectos hover */
-.download-buttons .primary-button:hover,
-.download-buttons .secondary-button:hover {
-  background-color: #c4c74a; /* Fondo amarillo al pasar el ratón */
+/* Hover para App Store */
+.download-buttons .primary-button:hover {
+  background-color: #d1d1d1; /* Gris más oscuro en hover */
   color: #ffffff; /* Texto blanco al hacer hover */
-  transform: scale(1.05); /* Ligeramente más grande en hover */
+  transform: scale(1.05); /* Ligeramente más grande */
+}
+
+/* Botón Google Play (Verde) */
+.download-buttons .secondary-button {
+  background-color: #c4c74a; /* Verde de Google Play */
+  color: #ffffff;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para Google Play */
+.download-buttons .secondary-button:hover {
+  background-color: #b6b83b; /* Verde más oscuro al hacer hover */
+  transform: scale(1.05); /* Ligeramente más grande */
 }
 
 .download-buttons i {
