@@ -25,7 +25,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #5050503a;
+  background-color: #35353555;
   padding: 20px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: top 0.3s ease, background-color 0.3s ease;

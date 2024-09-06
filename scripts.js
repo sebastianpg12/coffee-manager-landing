@@ -41,3 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
         video.currentTime = 10; // Start at 10 seconds
     });
 });
+
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 750) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
