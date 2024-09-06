@@ -1,6 +1,6 @@
 /* Download Section Styles */
 .download {
-  background-color: #f3f3f3;
+  background-color: #f3f3f3; /* Fondo gris claro */
   color: #333;
   padding: 100px 0;
   text-align: center;
@@ -24,42 +24,32 @@
 .download-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 20px;
   flex-wrap: wrap; /* Para que los botones se ajusten en pantallas pequeñas */
 }
 
 .download-buttons .primary-button,
 .download-buttons .secondary-button {
-  background-color: #c4c74a;
+  background-color: #ffffff; /* Ambos botones blancos por defecto */
   color: #333;
   padding: 15px 40px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
+  border: 2px solid #c4c74a; /* Añadir un borde amarillo tenue */
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.download-buttons .secondary-button {
-  background-color: transparent;
-  border: 2px solid #555;
-  color: #555;
-}
-
-.download-buttons .primary-button:hover {
-  background-color: #555;
-  color: #333;
-  transform: scale(1.05);
-}
-
+/* Efectos hover */
+.download-buttons .primary-button:hover,
 .download-buttons .secondary-button:hover {
-  background-color: #c4c74a;
-  color: #333;
-  transform: scale(1.05);
+  background-color: #c4c74a; /* Fondo amarillo al pasar el ratón */
+  color: #ffffff; /* Texto blanco al hacer hover */
+  transform: scale(1.05); /* Ligeramente más grande en hover */
 }
 
 .download-buttons i {
