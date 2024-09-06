@@ -1,0 +1,64 @@
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #ddd; /* Texto en gris claro para mayor suavidad */
+  margin: 0;
+}
+
+footer .social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+footer .social-list a {
+  color: white;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-list a:hover {
+  color: #c4c74a; /* Color destacado al pasar por encima */
+  transform: scale(1.2); /* Aumento ligero al hacer hover */
+}
+
+footer .social-list i {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo tenue para los íconos */
+  transition: background-color 0.3s ease;
+}
+
+footer .social-list i:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo más brillante al hacer hover */
+}
+
+@media (max-width: 768px) {
+  footer .footer-content {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  footer .social-list {
+      gap: 15px;
+  }
+}

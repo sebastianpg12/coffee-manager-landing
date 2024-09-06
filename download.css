@@ -1,0 +1,80 @@
+/* Download Section Styles */
+.download {
+  background-color: #f3f3f3; /* Fondo marrón oscuro */
+  color:  #333;;
+  padding: 100px 0;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.download h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.download p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555; /* Texto en gris claro */
+  line-height: 1.6;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+}
+
+.download-buttons .primary-button,
+.download-buttons .secondary-button {
+  background-color: #c4c74a;
+  color: #333;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-buttons .secondary-button {
+  background-color: transparent;
+  border: 2px solid #555;
+  color: #555;
+}
+
+.download-buttons .primary-button:hover {
+  background-color: #555;
+  color: #333;
+  transform: scale(1.05);
+}
+
+.download-buttons .secondary-button:hover {
+  background-color: #c4c74a;
+  color: #333;
+  transform: scale(1.05);
+}
+
+.download-buttons i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .download-buttons {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .download-buttons .primary-button,
+  .download-buttons .secondary-button {
+      width: 100%;
+      max-width: 300px; /* Ajuste en pantallas pequeñas */
+      justify-content: center;
+  }
+}
